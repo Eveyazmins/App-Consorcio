@@ -1,0 +1,102 @@
+// http://ionicframework.com/docs/theming/
+@import '~@ionic/angular/css/core.css';
+@import '~@ionic/angular/css/normalize.css';
+@import '~@ionic/angular/css/structure.css';
+@import '~@ionic/angular/css/typography.css';
+@import '~@ionic/angular/css/display.css';
+@import '~@ionic/angular/css/padding.css';
+@import '~@ionic/angular/css/float-elements.css';
+@import '~@ionic/angular/css/text-alignment.css';
+@import '~@ionic/angular/css/text-transformation.css';
+@import '~@ionic/angular/css/flex-utils.css';
+
+*{
+    font-family: 'Poppins', sans-serif;
+}
+
+
+
+
+
+ion-content{
+    --background: rgb(70, 69, 69); //A58989
+}
+
+.splash {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: 999;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    //background: #A58989;
+    background:  rgb(70, 69, 69);
+    flex-direction: column;
+}
+
+.firma{
+  margin-top: 10px;
+  transform: translateZ(1px);   
+  width: 130px;
+  height:20px;
+  margin: 6px;
+  //background: #84c36e;
+  // -webkit-animation: sk-rotateplane 2s infinite ease-in-out;
+  // animation: sk-rotateplane 2s infinite ease-in-out;
+}
+
+
+// .spinner {
+//   width: 40px;
+//   height: 40px;
+
+//   position: relative;
+//   margin: 100px auto;
+// }
+
+.double-bounce1, .double-bounce2 {
+  
+  border-radius: 0%;
+  
+  opacity: 0.6;
+  //position: absolute;
+  top: 0;
+  left: 0;
+  
+  -webkit-animation: sk-bounce 2.0s infinite ease-in-out;
+  animation: sk-bounce 2.0s infinite ease-in-out;
+}
+
+.double-bounce1 {
+  width: 130px;
+  height: 130px;
+  -webkit-animation-delay: -1.0s;
+  animation-delay: -1.0s;
+}
+
+
+.double-bounce2 {
+  
+  margin-top: 25px;
+  width: 130px;
+  height: 20px;
+  -webkit-animation-delay: -1.0s;
+  animation-delay: -1.0s;
+}
+
+@-webkit-keyframes sk-bounce {
+  0%, 100% { -webkit-transform: scale(0.0) }
+  50% { -webkit-transform: scale(1.0) }
+}
+
+@keyframes sk-bounce {
+  0%, 100% { 
+    transform: scale(0.0);
+    -webkit-transform: scale(0.0);
+  } 50% { 
+    transform: scale(1.0);
+    -webkit-transform: scale(1.0);
+  }
+}
+
