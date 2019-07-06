@@ -61,6 +61,7 @@ export class HomePage {
 
         this.formGroup.controls['email'].setValue(this.usuarioSeleccionado.correo);
         this.formGroup.controls['clave'].setValue(this.usuarioSeleccionado.clave);
+        
       });
 
     return await modal.present();
@@ -96,6 +97,8 @@ export class HomePage {
     this.ref.on('value', resp => {    
       
       this.usuarios = ListaUsuarios(resp);      
+
+      console.log("resp" + resp);
       
       for(let usuario of this.usuarios){
         if(usuario.correo == this.formGroup.value.email && usuario.clave == this.formGroup.value.clave){
