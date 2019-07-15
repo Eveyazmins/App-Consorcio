@@ -1,4 +1,4 @@
-
+/*
 export const FIREBASE_CONFIG = {   
         apiKey: "AIzaSyD-xEm1QiOBZTN8bnV0ACCID9TzGYVnreE",
         authDomain: "consorcioapp-209d4.firebaseapp.com",
@@ -7,9 +7,9 @@ export const FIREBASE_CONFIG = {
         storageBucket: "consorcioapp-209d4.appspot.com",
         messagingSenderId: "884050654811"    
 };
+*/
 
 
-/*
 export const FIREBASE_CONFIG = {   
     apiKey: "AIzaSyBYo9eDR9X96Zqxz_-BSPJw154QCYruuQU",
     authDomain: "ppsappconsorcio.firebaseapp.com",
@@ -17,10 +17,9 @@ export const FIREBASE_CONFIG = {
     projectId: "ppsappconsorcio",
     storageBucket: "ppsappconsorcio.appspot.com",
     messagingSenderId: "217953168273",
- 
 };
 
-*/
+
 export const ListaUsuarios = snapshot => {
     let ArrayUsuarios = [];
    // console.log("entro en la lista de usuarios");
@@ -43,8 +42,9 @@ export const Imagenes = snapshot => {
         item.key = element.key;
         arrayImagenes.push(item);
     });
+
     //console.log(arrayImagenes);
-    return arrayImagenes;
+    return arrayImagenes.reverse();
 }
 
 

@@ -2,7 +2,7 @@
 <widget id="io.ionic.consorcioTest" version="0.0.3" xmlns="http://www.w3.org/ns/widgets" xmlns:cdv="http://cordova.apache.org/ns/1.0">
     <name>Consorcio App</name>
     <description>Una app para tu consorcio</description>
-    <author email="rodolfovogel@gmail.com" href="http://github.com/DamianVogel">DamianVogel</author>
+    <author email="eveyazmins@gmail.com" href="http://github.com/Eveyazmins">EvelinSantamaria</author>
     <content src="index.html" />
     <access origin="*" />
     <allow-intent href="http://*/*" />
